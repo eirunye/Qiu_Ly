@@ -16,7 +16,7 @@ Android 项目  亦问客APP
 * 开发语言 JAVA
 #### 项目样式
 ![]()
-![]()
+![](https://github.com/eirunye/Qiu_Ly/blob/master/img/S81112-152814.jpg)
 ![]()
 ![]()
 
