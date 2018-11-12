@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent" android:layout_height="180dp"
+              android:orientation="vertical"
+              android:paddingLeft="8dp"
+              android:paddingRight="8dp">
+    <TextView
+        android:id="@+id/tv_item_ad_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/colorGrayF5"
+        android:textSize="17sp"/>
+    <ImageView
+        android:id="@+id/img_ad_picture"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:scaleType="fitXY"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView android:id="@+id/tv_row_description"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="2dp"
+                  android:textSize="15sp"/>
+        <TextView android:id="@+id/tv_row_time"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginTop="2dp"
+                  android:layout_toRightOf="@+id/tv_row_description"
+                  android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/tv_rv_num"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:textSize="12sp"/>
+        <com.sackcentury.shinebuttonlib.ShineButton
+            android:id="@+id/btn_rv_favorite"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tv_rv_num"
+            android:elevation="10dp"
+            app:btn_color="@android:color/darker_gray"
+            app:btn_fill_color="#f26d7d"
+            app:siShape="@raw/heart"/>
+    </RelativeLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="8dp"
+          android:background="@color/colorLine"/>
+
+
+</LinearLayout>

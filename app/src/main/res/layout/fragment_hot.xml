@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <com.flyco.tablayout.SegmentTabLayout
+        android:id="@+id/hot_segmentTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        app:tl_bar_color="#ffffff"
+        app:tl_indicator_anim_enable="true"
+        app:tl_indicator_color="@color/colorAccent"
+        app:tl_indicator_margin_bottom="2dp"
+        app:tl_indicator_margin_left="2dp"
+        app:tl_indicator_margin_right="2dp"
+        app:tl_indicator_margin_top="2dp"
+        app:tl_textBold="SELECT"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/hot_viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"/>
+
+
+    <!--<com.hxnidc.qiu_ly.widget.PathAnimationTabLayout-->
+    <!--android:id="@+id/PathAnimationTabLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal">-->
+    <!--<ImageView android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:scaleType="center"-->
+    <!--android:src="@drawable/icon_hot"-->
+    <!--tools:ignore="ContentDescription"-->
+    <!--/>-->
+    <!--<ImageView android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:scaleType="center"-->
+    <!--android:src="@drawable/icon_recommend"-->
+    <!--tools:ignore="ContentDescription"-->
+    <!--/>-->
+    <!--<ImageView android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:scaleType="center"-->
+    <!--android:src="@drawable/icon_book"-->
+    <!--tools:ignore="ContentDescription"-->
+    <!--/>-->
+
+    <!--</com.hxnidc.qiu_ly.widget.PathAnimationTabLayout>-->
+
+</LinearLayout>

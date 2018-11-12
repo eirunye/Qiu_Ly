@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="210dp"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="#585858"
+        app:mrl_rippleDelayClick="false"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true">
+        <Button
+            android:id="@+id/btn_login_photo_album"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/color_select"
+            android:text="相册"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="14dp"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="#585858"
+        app:mrl_rippleDelayClick="false"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true">
+        <Button
+            android:id="@+id/btn_login_photograph"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/color_select"
+            android:text="拍照"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="#585858"
+        app:mrl_rippleDelayClick="false"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true">
+        <Button
+            android:id="@+id/btn_login_photocanel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/color_select"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+
+</LinearLayout>

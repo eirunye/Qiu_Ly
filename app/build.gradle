@@ -1,16 +1,29 @@
 apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "25.0.3"
+    useLibrary 'org.apache.http.legacy'
+    dataBinding {
+        enabled = true
+    }
     defaultConfig {
         applicationId "com.hxnidc.qiu_ly"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 25
         versionCode 1
-        versionName "1.0"
+        versionName "2017.7.21.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        ndk {
+
+            //APP的build.gradle设置支持的SO库架构
+
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86'
+        }
+
     }
     buildTypes {
         release {
@@ -18,16 +31,125 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.2.0'
-    compile 'com.android.support:design:25.2.0'
+
+    //Android 多主题框架。
+
+    //compile 'com.youth.banner:banner:1.4.9'
+
+    //轮播图或者启动页
+
+    //点赞效果
+
+    //下拉刷新上拉加载
+
+    //右滑finish掉页面
+
+    //弹出菜单https://github.com/Nightonke/BoomMenu
+
+    //三个圆角联动
+
+    //compile 'com.victor:lib:1.0.4' https://github.com/yankai-victor/Loading
+
+    //    compile('com.alibaba.android:vlayout:1.0.7@aar') {
+
+    //        transitive = true
+
+    //    }
+
+    //下拉刷新
+
+    //如果你想应用能够兼容Android6.0，请添加此依赖(org.apache.http.legacy.jar)
+
+    //下拉刷新上拉加载
+
+    //compile 'com.nineoldandroids:library:2.4.0'
+
+    //compile 'cn.bingoogolapple:bga-refreshlayout:1.1.6'
+
+    //this is ijkplayer compile
+
+    //compile project(':recyview_lib')
+
+    //解析html
+
+    //compile 'com.github.arimorty:floatingsearchview:2.1.1'//搜索
+
+    //popupwindow
+
+    //loading
+
+    //bmob-push：Bmob的推送包
+
+    //compile 'com.jude:easyrecyclerview:4.4.0'
+
+    //compile 'com.jude:swipebackhelper:3.1.2'
+
+    //compile 'com.youth.banner:banner:1.4.9'
+
+    //compile 'com.cjj.materialrefeshlayout:library:1.3.0'
+
+    //compile 'org.sufficientlysecure:html-textview:3.4'
+
+    //compile 'com.wx.goodview:goodview:1.0.0'
+
+    //compile 'com.bilibili:magicasakura:0.1.6@aar'
+
+    //compile 'com.nightonke:boommenu:2.1.0'
+
+    //compile 'cn.bmob.android:bmob-push:0.8'
+
+    //compile 'com.zzhoujay.glideimagegetter:glideimagegetter:1.0.5'
+
+    //换肤
+
+    //compile 'com.github.garretyoder:Colorful:1.1'
+
+    //    compile 'com.classic.common:multiple-status-view:1.3'
+    compile 'com.github.clans:fab:1.6.4'
+    compile 'com.huxq17.android:SwipeCardsView:1.3.5'
+    compile 'com.contrarywind:Android-PickerView:3.2.5'
+    compile 'com.zaaach:toprightmenu:1.1.2'
+    compile 'com.github.pinguo-zhouwei:CustomPopwindow:2.1.1'
+    compile 'jp.wasabeef:blurry:2.1.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:design:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
-    compile 'com.android.support:support-vector-drawable:25.2.0'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.balysv:material-ripple:1.0.2'
+    compile 'com.zhy:base-rvadapter:3.0.3'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.orhanobut:logger:2.1.1'
+    compile 'cn.bingoogolapple:bga-banner:2.1.7@aar'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.sackcentury:shinebutton:0.1.9'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    compile 'org.jsoup:jsoup:1.10.3'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.sunfusheng:marqueeview:1.2.0'
+    compile 'com.bm.photoview:library:1.4.1'
+    compile 'cn.bmob.android:bmob-sdk:3.5.5'
+    compile 'cn.bmob.android:http-legacy:1.0'
+    compile 'com.zzhoujay.richtext:richtext:2.5.2'
+    compile 'com.wang.avi:library:2.1.3'
+    compile 'com.shuyu:GSYVideoPlayer:2.1.3'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
     testCompile 'junit:junit:4.12'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
 }

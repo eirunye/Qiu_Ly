@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="66dp"
+              android:background="@drawable/item_select_bg"
+              android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="65dp"
+                  android:orientation="horizontal">
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5">
+            <TextView android:id="@+id/tv_title"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:maxLines="2"
+                      android:paddingLeft="8dp"
+                      android:paddingRight="8dp"
+                      android:paddingTop="4dp"
+                      android:textColor="@color/black"
+                      android:textSize="15sp"/>
+            <com.sackcentury.shinebuttonlib.ShineButton
+                android:id="@+id/po_image"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/tv_rv_num"
+                android:elevation="10dp"
+                app:btn_color="@android:color/darker_gray"
+                app:btn_fill_color="#f26d7d"
+                app:siShape="@raw/heart"/>
+            <TextView android:id="@+id/tv_tagNum"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentBottom="true"
+                      android:layout_marginLeft="22dp"
+                      android:gravity="center"
+                      android:text=""/>
+
+        </RelativeLayout>
+        <ImageView android:id="@+id/img_Pic"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_marginBottom="4dp"
+                   android:layout_marginLeft="6dp"
+                   android:layout_marginRight="6dp"
+                   android:layout_marginTop="4dp"
+                   android:layout_weight="1"
+                   android:scaleType="fitXY"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/colorLine"/>
+
+</LinearLayout>

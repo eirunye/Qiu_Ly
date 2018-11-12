@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff333333</color>
+    <color name="colorPrimaryDark">#ff222222</color>
+    <color name="colorAccent">#ff222222</color>
+    <color name="colorText">#2c2c2c</color>
+    <color name="colorLine">#313131</color>
+    <color name="white">#2c2c2c</color>
+    <color name="colorGrayF5">#c8c6c4</color>
+    <color name="color">#F5F4F3</color>
+    <color name="color_select">#e67caa</color>
+    <color name="accent">#4CAF50</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="list_divider_line">#545454</color>
+    <color name="gray">#545454</color>
+    <color name="black">#000000</color>
+    <color name="common_gray">#dad8d8</color>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="110dp"
+              android:layout_marginLeft="8dp"
+              android:layout_marginRight="8dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+            <TextView
+                android:id="@+id/tv_first_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:maxLines="2"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+                <com.sackcentury.shinebuttonlib.ShineButton
+                    android:id="@+id/ShineButton"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="2dp"
+                    android:elevation="10dp"
+                    app:btn_color="@android:color/darker_gray"
+                    app:btn_fill_color="#f26d7d"
+                    app:siShape="@raw/heart"/>
+                <ImageView
+                    android:id="@+id/img_first_comments"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/ic_comments"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/tv_first_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_first_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+            />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/video_click_play_selector"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="5dp"
+          android:background="@color/colorLine"/>
+
+
+</LinearLayout>

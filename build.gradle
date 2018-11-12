@@ -5,18 +5,29 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0'
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'me.tatarka:gradle-retrolambda:3.6.1'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
-
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
 allprojects {
     repositories {
         jcenter()
+        //Bmob的maven仓库地址，必须填写
+        maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
+        //CustomPopwindow
+        maven { url 'https://jitpack.io' }
+
     }
 }
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir

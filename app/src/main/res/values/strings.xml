@@ -1,12 +1,49 @@
 <resources>
-    <string name="app_name">Qiu_Ly</string>
-
+    <string name="app_name">异客</string>
+    <string name="primary_color">Primary Color</string>
+    <string name="primary_color_desc">app\'s primary color</string>
+    <string name="accent_color">Accent Color</string>
+    <string name="accent_color_desc">app\'s accent color</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_test">TestActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_video">Video</string>
+    <string name="title_dashboard">Hot</string>
+    <string name="title_notifications">Mine</string>
+    <string name="click_again_finish_app">再按一次退出程序</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="load_page_frail_string">页面加载失败!</string>
+    <string name="login_string">登录</string>
+    <string name="register_string">注册</string>
+    <string name="setting_string">设置</string>
+
+    <string name="title_activity_attention">AttentionActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="decals_string">我的贴纸</string>
+    <string name="comment_string">我的评论</string>
+    <string name="label_string">我的标签</string>
+    <string name="favorite_string">我的收藏</string>
+    <string name="recommd_string">推荐</string>
+    <string name="sweep_string">扫一扫</string>
+    <string name="attention_string">关注</string>
+    <string name="message_camera">拍摄照片和录制视频 \n</string>
+    <string name="message_start">在使用应用过程中，你需要给出如下的重要权限。 \n\n</string>
+    <string name="message_external_storage">访问您设备上的照片 \n</string>
+    <string name="message_ok">确定</string>
+    <string name="message_cancel">取消</string>
+    <string name="message_end">\n继续设置使用权限，请选择“确定”进入应用信息界面去修改权限。</string>
+    <string name="userinfo_string">个人信息</string>
+    <string name="city_string">城市选择</string>
+    <string name="check_string">请检查生日</string>
+    <string name="joke_string">轻松一刻</string>
+    <string name="title_activity_cn_tech_tv">CnTechTVActivity</string>
+    <string name="forget_string">忘记密码</string>
+    <string name="find_pass_string">找回密码</string>
+    <string name="network_fail_string">网络请求失败,请检查网络!</string>
 </resources>
